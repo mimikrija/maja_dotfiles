@@ -1,0 +1,24 @@
+[user]
+	name = Maja Gacesa
+	email = maja.gacesa@gmail.com
+[fetch]
+	prune = true
+[alias]
+	st = status --short --branch
+	please = push --force-with-lease
+	# custom log options:
+	ll = log --pretty='format:%C(auto)%h %s, %C(green)by %cn on %ad' --date=short # enhanced --online with author and date
+	lgpr = ll --grep='Merged PR' # list all completed PRs
+	item = "!f() { git branch --list *$1*; }; f"
+	adu = add -u
+	added = add -A -n # what was added
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[core]
+	editor = code --wait
+	abbrev = 8
+	autocrlf = true
+[rebase]
+	autosquash = true
