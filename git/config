@@ -22,3 +22,10 @@
 	autocrlf = true
 [rebase]
 	autosquash = true
+[user]
+        name = Maja Gacesa
+	email = maja.gacesa@gropyus.com
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
