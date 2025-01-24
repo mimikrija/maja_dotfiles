@@ -8,6 +8,7 @@
 	please = push --force-with-lease
 	# custom log options:
 	ll = log --pretty='format:%C(auto)%h %s, %C(green)by %cn on %ad' --date=short # enhanced --online with author and date
+	lgc = ll trunk..HEAD
 	lgpr = ll --grep='Merged PR' # list all completed PRs
 	item = "!f() { git branch --list *$1*; }; f"
 	adu = add -u
