@@ -21,6 +21,7 @@
 	abbrev = 8
 	autocrlf = true
 	commentchar = "@"
+	pager = "less -iXFR"
 [rebase]
 	autosquash = true
 [user]
