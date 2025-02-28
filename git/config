@@ -15,6 +15,7 @@
 	item = "!f() { git branch --list *$1*; }; f"
 	adu = add -u
 	added = add -A -n # what was added
+	rb = !git stash &&  git checkout trunk &&  git pull &&  git checkout - &&  git rebase origin/trunk && git stash pop   
 [diff]
 	tool = default-difftool
 [difftool "default-difftool"]
